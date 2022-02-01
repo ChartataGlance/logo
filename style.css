@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+
+:root{
+    --primary-color:#047aed;
+    --sec-color:rgb(124, 103, 103);
+    --dark-color:#082038;
+    --light-color:rgb(173, 191, 226);
+
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'lato', sans-serif;
+    background-color: rgb(107, 100, 168);
+    line-height: 1.6 ;
+   
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1 ,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+
+}
+p{
+ margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+.navbar {
+    background-color:var(--primary-color);
+    color: #fff;
+    height: 70px;
+
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    
+}
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    color: rgb(255, 238, 238);
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   
+}
+
+/*showcase*/
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+}
+
+.showcase h1 {
+    font-size: 40px;
+    
+}
+.showcase p{
+    margin: 20px 0;
+}
+
+ .grid{
+     display: grid;
+     grid-template-columns: repeat(2 , 1fr);
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+ }
+
+ .card{
+     background-color: rgb(255, 255, 255);
+     border-radius: 10px;
+     box-shadow: 0 3px 10px rgba(0,0,0,1);
+     padding: 20px;
+     margin: 10px;
+ }
+ .showcase-form .form-control{
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid rgb(207, 159, 159);
+    width: 100%;
+    padding:3px ;
+    font-size: 16px;
+}
+.showcase{
+ 
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+.showcase-form input:focus{
+    outline: none;
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px white solid;
+}
+.btn:hover {
+    transform: scale(0.90);
+}
+
+.stats{
+    padding-top: 50px;
+}
+.grid-3{
+    grid-template-columns: repeat(3 , 1fr);
+}
